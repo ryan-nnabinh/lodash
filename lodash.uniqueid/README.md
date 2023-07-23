@@ -1,6 +1,6 @@
-# lodash.uniqueid v4.0.1
+# lodash.uniqueid v4.17.21
 
-The [lodash](https://lodash.com/) method `_.uniqueId` exported as a [Node.js](https://nodejs.org/) module.
+The [Lodash](https://lodash.com/) method `_.uniqueId` exported as a [Node.js](https://nodejs.org/) module.
 
 ## Installation
 
@@ -15,4 +15,4 @@ In Node.js:
 var uniqueId = require('lodash.uniqueid');
 ```
 
-See the [documentation](https://lodash.com/docs#uniqueId) or [package source](https://github.com/lodash/lodash/blob/4.0.1-npm-packages/lodash.uniqueid) for more details.
+See the [documentation](https://lodash.com/docs#uniqueId) or [package source](https://github.com/lodash/lodash/blob/4.17.21-npm-packages/lodash.uniqueid) for more details.

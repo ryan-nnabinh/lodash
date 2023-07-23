@@ -1,6 +1,6 @@
-# lodash.flowright v3.5.0
+# lodash.flowright v4.17.21
 
-The [lodash](https://lodash.com/) method `_.flowRight` exported as a [Node.js](https://nodejs.org/) module.
+The [Lodash](https://lodash.com/) method `_.flowRight` exported as a [Node.js](https://nodejs.org/) module.
 
 ## Installation
 
@@ -15,4 +15,4 @@ In Node.js:
 var flowRight = require('lodash.flowright');
 ```
 
-See the [documentation](https://lodash.com/docs#flowRight) or [package source](https://github.com/lodash/lodash/blob/3.5.0-npm-packages/lodash.flowright) for more details.
+See the [documentation](https://lodash.com/docs#flowRight) or [package source](https://github.com/lodash/lodash/blob/4.17.21-npm-packages/lodash.flowright) for more details.

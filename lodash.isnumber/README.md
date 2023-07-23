@@ -1,6 +1,6 @@
-# lodash.isnumber v3.0.3
+# lodash.isnumber v4.17.21
 
-The [lodash](https://lodash.com/) method `_.isNumber` exported as a [Node.js](https://nodejs.org/) module.
+The [Lodash](https://lodash.com/) method `_.isNumber` exported as a [Node.js](https://nodejs.org/) module.
 
 ## Installation
 
@@ -15,4 +15,4 @@ In Node.js:
 var isNumber = require('lodash.isnumber');
 ```
 
-See the [documentation](https://lodash.com/docs#isNumber) or [package source](https://github.com/lodash/lodash/blob/3.0.3-npm-packages/lodash.isnumber) for more details.
+See the [documentation](https://lodash.com/docs#isNumber) or [package source](https://github.com/lodash/lodash/blob/4.17.21-npm-packages/lodash.isnumber) for more details.

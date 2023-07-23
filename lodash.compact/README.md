@@ -1,6 +1,6 @@
-# lodash.compact v3.0.1
+# lodash.compact v4.17.21
 
-The [lodash](https://lodash.com/) method `_.compact` exported as a [Node.js](https://nodejs.org/) module.
+The [Lodash](https://lodash.com/) method `_.compact` exported as a [Node.js](https://nodejs.org/) module.
 
 ## Installation
 
@@ -15,4 +15,4 @@ In Node.js:
 var compact = require('lodash.compact');
 ```
 
-See the [documentation](https://lodash.com/docs#compact) or [package source](https://github.com/lodash/lodash/blob/3.0.1-npm-packages/lodash.compact) for more details.
+See the [documentation](https://lodash.com/docs#compact) or [package source](https://github.com/lodash/lodash/blob/4.17.21-npm-packages/lodash.compact) for more details.

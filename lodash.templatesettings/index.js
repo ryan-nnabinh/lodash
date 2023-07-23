@@ -1,6 +1,6 @@
 /**
  * Lodash (Custom Build) <https://lodash.com/>
- * Build: `lodash modularize exports="npm" -o ./`
+ * Build: `lodash modularize exports="npm" -o ./lodash`
  * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
  * Released under MIT license <https://lodash.com/license>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
@@ -23,6 +23,12 @@ var reUnescapedHtml = /[&<>"']/g,
 /** Used to match template delimiters. */
 var reEscape = /<%-([\s\S]+?)%>/g,
     reEvaluate = /<%([\s\S]+?)%>/g;
+
+/** Used to match leading whitespace. */
+var reTrimStart = /^\s+/;
+
+/** Used to match a single whitespace character. */
+var reWhitespace = /\s/;
 
 /** Used to map characters to HTML entities. */
 var htmlEscapes = {
@@ -76,6 +82,19 @@ function basePropertyOf(object) {
 }
 
 /**
+ * The base implementation of `_.trim`.
+ *
+ * @private
+ * @param {string} string The string to trim.
+ * @returns {string} Returns the trimmed string.
+ */
+function baseTrim(string) {
+  return string
+    ? string.slice(0, trimmedEndIndex(string) + 1).replace(reTrimStart, '')
+    : string;
+}
+
+/**
  * Used by `_.escape` to convert characters to HTML entities.
  *
  * @private
@@ -83,6 +102,21 @@ function basePropertyOf(object) {
  * @returns {string} Returns the escaped character.
  */
 var escapeHtmlChar = basePropertyOf(htmlEscapes);
+
+/**
+ * Used by `_.trim` and `_.trimEnd` to get the index of the last non-whitespace
+ * character of `string`.
+ *
+ * @private
+ * @param {string} string The string to inspect.
+ * @returns {number} Returns the index of the last non-whitespace character.
+ */
+function trimmedEndIndex(string) {
+  var index = string.length;
+
+  while (index-- && reWhitespace.test(string.charAt(index))) {}
+  return index;
+}
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
